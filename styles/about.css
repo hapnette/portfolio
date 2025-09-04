@@ -1,0 +1,474 @@
+/* CSS Variables - Design System from Figma */
+:root {
+    /* Colors */
+    --color-black: #000000;
+    --color-white: #FFFAFA;
+    --color-snow: #FFFAFA;
+    --color-dark-red: #900A0B;
+    
+    /* Typography */
+    --font-wasted-vindey: 'Wasted Vindey', serif;
+    --font-raleway-light: 'Raleway', sans-serif;
+    --font-raleway-semibold: 'Raleway', sans-serif;
+    
+    /* Font Sizes */
+    --font-size-h1: 40px;
+    --font-size-h3: 24px;
+    --font-size-description: 14px;
+    --font-size-button: 10px;
+    
+    /* Line Heights */
+    --line-height-h1: 100%;
+    --line-height-h3: 35px;
+    --line-height-description: 21px;
+    --line-height-semibold: 25px;
+    --line-height-button: 100%;
+    
+    /* Spacing - CORRECTED */
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 24px;
+    --spacing-lg: 40px;
+    --spacing-xl: 60px;
+    --spacing-xxl: 160px;
+    --spacing-xxxl: 100px;
+    
+    /* Layout */
+    --max-width: 1280px;
+    --nav-height: 60px;
+    --profile-image-width: 420px;
+    --profile-image-height: 483px;
+
+}
+
+/* Import Custom Fonts */
+@font-face {
+    font-family: 'Wasted Vindey';
+    src: url('https://fonts.googleapis.com/css2?family=Wasted+Vindey&display=swap');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-raleway-light);
+    background-color: var(--color-snow);
+    color: var(--color-black);
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var(--nav-height);
+    background-color: var(--color-snow);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 0 var(--spacing-xxxl);
+    gap: var(--spacing-md);
+}
+
+.nav-button {
+    padding: 0;
+    margin-right: var(--spacing-md);
+    cursor: pointer;
+}
+
+.nav-button.active {
+    opacity: 1;
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: inherit;
+    font-family: var(--font-raleway-light);
+    font-weight: 300;
+    font-size: var(--font-size-button);
+    line-height: var(--line-height-button);
+    color: var(--color-black);
+}
+
+.nav-button span {
+    font-family: var(--font-raleway-light);
+    font-weight: 300;
+    font-size: var(--font-size-button);
+    line-height: var(--line-height-button);
+    color: var(--color-black);
+}
+
+.nav-button:hover a {
+    font-style: italic;
+    color: var(--color-dark-red);
+}
+
+/* Main Content */
+.main-content {
+    margin-top: var(--nav-height);
+    padding: 0 var(--spacing-xxxl);
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    gap: var(--spacing-xxl);
+    margin-top: var(--spacing-xxl);
+    margin-bottom: var(--spacing-xxl);
+}
+
+.profile-image {
+    width: var(--profile-image-width);
+    height: var(--profile-image-height);
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-content {
+    flex: 1;
+    padding-top: var(--spacing-lg);
+}
+
+.greeting {
+    font-family: var(--font-wasted-vindey);
+    font-size: var(--font-size-h1);
+    font-weight: 400;
+    line-height: var(--line-height-h1);
+    color: var(--color-black);
+    margin-bottom: var(--spacing-lg);
+    width: 88px;
+}
+
+.profile-description {
+    max-width: 527px;
+}
+
+.profile-description p {
+    font-family: var(--font-raleway-light);
+    font-weight: 300;
+    font-size: var(--font-size-description);
+    line-height: var(--line-height-description);
+    color: var(--color-black);
+    margin-bottom: var(--spacing-sm);
+    text-align: justify;
+}
+
+/* Experience Section */
+.experience-section {
+    margin-bottom: var(--spacing-xxl);
+}
+
+.experience-grid {
+    display: flex;
+    gap: var(--spacing-xxl);
+    justify-content:space-between;
+    transform: translateX(-0.5px);
+}
+
+.experience-column {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    min-width: 291px;
+}
+
+.section-title {
+    font-family: var(--font-wasted-vindey);
+    font-size: var(--font-size-h1);
+    font-weight: 400;
+    line-height: var(--line-height-h1);
+    color: var(--color-black);
+    margin-bottom: var(--spacing-md);
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.company-name {
+    font-family: var(--font-raleway-semibold);
+    font-weight: 600;
+    font-size: var(--font-size-description);
+    line-height: var(--line-height-semibold);
+    color: var(--color-black);
+}
+
+.position,
+.duration {
+    font-family: var(--font-raleway-light);
+    font-weight: 300;
+    font-size: var(--font-size-description);
+    line-height: var(--line-height-description);
+    color: var(--color-black);
+}
+
+/* Skills Header Section */
+.skills-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+    margin-top: var(--spacing-xxl);
+}
+
+.skills-title,
+.tools-title {
+    padding: var(--spacing-sm);
+}
+
+.skills-title .section-title,
+.tools-title .section-title {
+    font-family: var(--font-wasted-vindey);
+    font-size: var(--font-size-h1);
+    font-weight: 400;
+    line-height: var(--line-height-h1);
+    color: var(--color-black);
+    white-space: pre;
+}
+
+.decorative-line {
+    width: 20.995px;
+    height: 49.989px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.decorative-line img {
+    width: 54.231px;
+    height: auto;
+}
+
+/* Skills Grid Section */
+.skills-grid-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 100px;
+    row-gap: 60px;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    width: var(--skill-card-width);
+    height: var(--skill-card-height);
+}
+
+.skill-title {
+    font-family: var(--font-raleway-light);
+    font-weight: 300;
+    font-size: var(--font-size-h3);
+    line-height: var(--line-height-h3);
+    color: var(--color-black);
+}
+
+.skill-description {
+    font-family: var(--font-raleway-light);
+    font-weight: 300;
+    font-size: var(--font-size-description);
+    line-height: var(--line-height-description);
+    color: var(--color-black);
+}
+
+/* Personal Note Section */
+.personal-note {
+    text-align: center;
+    margin-bottom: var(--spacing-xxl);
+}
+
+.personal-note p {
+    font-family: var(--font-raleway-light);
+    font-weight: 300;
+    font-size: var(--font-size-description);
+    line-height: var(--line-height-description);
+    color: var(--color-black);
+    white-space: pre;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--color-snow);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-lg) var(--spacing-xxxl);
+    height: 80px;
+}
+
+.contact-info span {
+    font-family: var(--font-raleway-light);
+    font-weight: 300;
+    font-size: var(--font-size-button);
+    line-height: var(--line-height-button);
+    color: var(--color-black);
+}
+
+.contact-info a {
+    font-family: var(--font-raleway-light);
+    font-weight: 300;
+    font-size: var(--font-size-button);
+    line-height: var(--line-height-button);
+    color: var(--color-black);
+    text-decoration: none;
+    padding:0;
+}
+
+.contact-info a:hover {
+    font-style: italic;
+    color: var(--color-dark-red);
+}
+
+/* Responsive Design */
+@media (max-width: 1280px) {
+    .navbar,
+    .footer {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+    
+    .nav-container,
+    .footer-container {
+        padding-left: var(--spacing-lg);
+        padding-right: var(--spacing-lg);
+    }
+    
+    .main-content {
+        padding: 0 var(--spacing-lg);
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        gap: var(--spacing-lg);
+    }
+    
+    .profile-image {
+        width: 100%;
+        max-width: var(--profile-image-width);
+        height: auto;
+        aspect-ratio: 420/483;
+    }
+    
+    .experience-grid {
+        flex-direction: column;
+        gap: var(--spacing-xl);
+        align-items: center;
+    }
+    
+    .experience-column {
+        min-width: auto;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin:0 0 0 0;
+    }
+    
+    .skill-card {
+        width: 100%;
+        height: auto;
+        min-height: var(--skill-card-height);
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-content {
+        padding-top: 0;
+    }
+    
+    .greeting {
+        width: auto;
+        font-size: 36px;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .skills-header {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: var(--spacing-lg);
+    }
+    
+    .experience-grid {
+        gap: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .greeting {
+        font-size: 32px;
+    }
+    
+    .section-title {
+        font-size: 32px;
+    }
+    
+    .nav-container,
+    .footer-container {
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+    
+    .profile-description {
+        max-width: 100%;
+    }
+    
+    .skills-grid {
+        gap: var(--spacing-md);
+    }
+}
