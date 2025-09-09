@@ -1,5 +1,10 @@
 /* Frank App Project Page Styles */
 
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* CSS Variables */
 :root {
     /* Colors */
@@ -133,7 +138,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url('../images/frank-hero-bg.png');
+    background-image: url('../images/frank/frank-hero-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,6 +154,28 @@ body {
     text-align: left;
     color: var(--color-snow);
     z-index: 2;
+}
+
+.view-final-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 0.6px solid var(--color-snow);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--color-snow);
+    font-family: var(--font-raleway-light);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+.view-final-btn:hover {
+    font-style: italic;
+    color: var(--color-dark-red);
+    border-color: var(--color-dark-red);
 }
 
 .hero-title {
@@ -517,7 +544,7 @@ body {
 }
 
 .typography {
-    width: 317px;
+    width: 517px;
 }
 
 .type-item {
@@ -637,6 +664,57 @@ body {
 }
 
 .contact-info a:hover {
+    font-style: italic;
+    color: var(--color-dark-red);
+}
+
+/* Project Navigation Bar */
+.project-nav {
+    background-color: var(--color-snow);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 32px 100px;
+    margin-bottom: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-nav-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.project-nav-arrow {
+    width: 5px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+
+.project-nav-text {
+    font-family: var(--font-raleway-light);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+    color: var(--color-black);
+    white-space: nowrap;
+}
+
+.project-nav-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.project-nav-link:hover {
+    opacity: 0.7;
+}
+
+.project-nav-link:hover .project-nav-text {
     font-style: italic;
     color: var(--color-dark-red);
 }

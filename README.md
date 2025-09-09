@@ -35,12 +35,16 @@ Portfolio/
 ├── marimekko.html          # Marimekko project page HTML
 ├── been-together.html      # Been Together project page HTML
 ├── frank-app.html          # Frank App project page HTML
+├── tierra-finlandia.html   # Tierra Finlandia project page HTML
+├── mikaeli.html            # Mikaeli project page HTML
 ├── styles/
 │   ├── homepage.css        # Homepage styles with design system
 │   ├── about.css           # About page styles with design system
 │   ├── marimekko.css       # Marimekko project page styles
 │   ├── been-together.css   # Been Together project page styles
-│   └── frank-app.css       # Frank App project page styles
+│   ├── frank-app.css       # Frank App project page styles
+│   ├── tierra-finlandia.css # Tierra Finlandia project page styles
+│   └── mikaeli.css         # Mikaeli project page styles
 └── README.md               # This file
 ```
 
@@ -106,6 +110,28 @@ Portfolio/
 - **Design Section**: Color palette (#FD1E6E, #caaa77, #000000) and typography system
 - **Final Prototype**: Placeholder for completed design
 - **Key Takeaways**: Testing, User Persona, Pitching, Story-telling
+
+### Tierra Finlandia Project Page
+- **Hero Section**: Full-screen background with project title and subtitle overlay
+- **What is Tierra Finlandia**: Service introduction and project focus
+- **Project Background**: Problem statement and design challenge
+- **Research Section**: Interactive dropdowns for research methods (Desk Research, Workshop, Interview)
+- **Concept Ideas Section**: Interactive dropdowns for concept exploration
+- **Design Section**: Visual concept representations and gallery
+- **Key Takeaways**: Service Design, Business Strategy, Workshop Facilitation
+
+### Mikaeli Project Page
+- **Hero Section**: Full-screen background with project title and subtitle overlay
+- **What is Mikaeli**: Concert hall introduction and target audience
+- **Project Background**: Problem statement and design challenge
+- **Audit Section**: Current website analysis and competitor research
+- **Research Section**: User interviews and key insights
+- **Ideation Section**: App flow and wireframe designs
+- **Design Section**: Color palette (#F5EEDC, #B17F2E, #173C4E) and typography system
+- **Logo Section**: Primary and secondary logo variations
+- **Test Section**: Usability testing and refinement strategies
+- **Final Prototype**: Interactive Figma prototype
+- **Key Takeaways**: Testing, User Interview, Branding Design
 
 ### Footer
 - Fixed bottom footer with contact information

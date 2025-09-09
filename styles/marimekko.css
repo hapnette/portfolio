@@ -1,3 +1,8 @@
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* CSS Variables - Design System from Figma */
 :root {
     /* Colors */
@@ -81,7 +86,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     height: 100%;
-    padding: 0 var(--spacing-xxxl);
     gap: var(--spacing-md);
 }
 
@@ -131,7 +135,7 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
 }
 
@@ -141,7 +145,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/marimekko-hero-bg.png');
+    background-image: url('../images/marimekko/marimekko-hero-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,6 +160,28 @@ body {
     background-color: rgba(255, 250, 250, 0.2);
     padding: var(--spacing-lg) var(--spacing-xl);
     border-radius: 4px;
+}
+
+.view-final-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 0.6px solid var(--color-black);
+    border-radius: 2px;
+    background: transparent;
+    color: var(--color-black);
+    font-family: var(--font-raleway-light);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+}
+
+.view-final-btn:hover {
+    font-style: italic;
+    color: var(--color-dark-red);
+    border-color: var(--color-dark-red);
 }
 
 .hero-title {
@@ -214,7 +240,7 @@ body {
 /* Project Background Section */
 .project-background {
     padding: var(--spacing-xxl) 0 120px 0;
-    background: url('../images/project-background-bg.png');
+    background: url('../images/common/project-background-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -374,16 +400,9 @@ body {
     line-height: var(--line-height-h2);
     color: var(--color-quote-red);
     white-space: pre;
+    padding-top: var(--spacing-md);
 }
 
-.quote-decoration {
-    font-family: var(--font-raleway-light);
-    font-size: var(--font-size-h2);
-    font-weight: 400;
-    line-height: var(--line-height-h2);
-    color: var(--color-black);
-    transform: rotate(12.781deg);
-}
 
 /* Audience Research */
 .audience-research {
@@ -713,7 +732,7 @@ body {
 
 /* Reflection Section */
 .reflection-section {
-    padding: var(--spacing-md) 0 300px 0;
+    padding: var(--spacing-md) 0;
     background-color: var(--color-snow);
 }
 
@@ -786,6 +805,57 @@ body {
 }
 
 .contact-info a:hover {
+    font-style: italic;
+    color: var(--color-dark-red);
+}
+
+/* Project Navigation Bar */
+.project-nav {
+    background-color: var(--color-snow);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 32px 100px;
+    margin-bottom: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-nav-section {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.project-nav-arrow {
+    width: 5px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+
+.project-nav-text {
+    font-family: var(--font-raleway-light);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+    color: var(--color-black);
+    white-space: nowrap;
+}
+
+.project-nav-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.project-nav-link:hover {
+    opacity: 0.7;
+}
+
+.project-nav-link:hover .project-nav-text {
     font-style: italic;
     color: var(--color-dark-red);
 }
