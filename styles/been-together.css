@@ -545,7 +545,7 @@ h3 {
     line-height: var(--line-height-h3);
     text-align: left;
     margin-bottom: 73px;
-    text-align: center;
+    text-align: left;
 }
 
 .wireframe-image {
@@ -581,13 +581,19 @@ h3 {
     font-weight: 600;
 }
 
+.test-text p {
+    margin-bottom: var(--spacing-xs);
+}
+
 .test-text ul {
     list-style: disc;
     margin-left: 21px;
+    margin-bottom: 20px;
+    gap: var(--spacing-sm);
 }
 
 .test-text li {
-    margin-bottom: 0;
+    margin-bottom: var(--spacing-xs);
 }
 
 .test-image {

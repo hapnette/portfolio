@@ -220,7 +220,7 @@ body {
 .section-title {
     font-family: var(--font-raleway-light);
     font-size: var(--font-size-h2);
-    font-weight: 400;
+    font-weight: 300;
     line-height: var(--line-height-h2);
     color: var(--color-black);
     text-align: left;
@@ -601,11 +601,11 @@ body {
 }
 
 .mining-section img {
-    width: 100%;
+    width: 80%;
     height: auto;
     object-fit: contain;
-    margin-bottom: var(--spacing-xxxl);
-    border-radius: 4px;
+    margin: 0 auto var(--spacing-xxxl) auto;
+    display: block;
 }
 
 .word-list-section h3 {
@@ -652,7 +652,7 @@ body {
 
 /* Copy Audit Section */
 .copy-audit-section {
-    padding: var(--spacing-xxxl) 0 var(--spacing-md) 0;
+    padding: 0 var(--spacing-md) 0;
     background-color: var(--color-snow);
 }
 
@@ -784,6 +784,7 @@ body {
     justify-content: space-between;
     padding: var(--spacing-lg) var(--spacing-xxxl);
     height: 80px;
+    margin: 0;
 }
 
 .contact-info span {
