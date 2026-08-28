@@ -817,8 +817,39 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    :root {
+        --font-size-title: 36px;
+        --font-size-h1: 30px;
+        --font-size-h2: 28px;
+        --font-size-h3: 18px;
+        --font-size-h4: 22px;
+        --font-size-body: 13px;
+        --font-size-body-large: 16px;
+        --line-height-h1: 38px;
+        --line-height-h2: 36px;
+        --line-height-h3: 28px;
+        --line-height-h4: 30px;
+        --line-height-body: 20px;
+        --line-height-body-large: 24px;
+    }
+
     .main-content {
         padding: 0 20px;
+    }
+
+    .hero-title {
+        font-size: var(--font-size-title);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-h1);
+        line-height: var(--line-height-h1);
+    }
+
+    .section-title {
+        font-size: var(--font-size-h2);
+        line-height: var(--line-height-h2);
+        white-space: normal;
     }
     
     .intro-section {
@@ -868,5 +899,65 @@ body {
     .footer-container {
         padding: 0 20px;
     }
+
+    .main-content img,
+    .main-content iframe {
+        max-width: 100%;
+    }
+
+    .main-content img {
+        height: auto;
+    }
+
+    .audit-image,
+    .flow-image,
+    .wireframe-image,
+    .logo-image {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .audit-image img {
+        width: 100%;
+    }
 }
 
+@media (max-width: 1280px) {
+    .project-nav {
+        padding-left: var(--spacing-lg);
+        padding-right: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-nav {
+        align-items: stretch;
+        gap: var(--spacing-md);
+        margin-bottom: 180px;
+    }
+
+    .project-nav-section:last-child {
+        justify-content: flex-end;
+    }
+
+    .project-nav-link {
+        justify-content: space-between;
+    }
+
+    .project-nav-text {
+        font-size: 20px;
+        line-height: 30px;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-nav {
+        padding: var(--spacing-lg);
+    }
+
+    .project-nav-text {
+        font-size: var(--font-size-h3);
+        line-height: var(--line-height-h3);
+    }
+}

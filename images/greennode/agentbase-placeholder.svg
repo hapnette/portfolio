@@ -1,0 +1,15 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" fill="#FFFAFA"/>
+  <rect x="72" y="72" width="1056" height="556" fill="#F4F1EC" stroke="#000000" stroke-width="2"/>
+  <rect x="132" y="140" width="240" height="110" fill="#FFFAFA" stroke="#900A0B" stroke-width="2"/>
+  <rect x="480" y="140" width="240" height="110" fill="#FFFAFA" stroke="#900A0B" stroke-width="2"/>
+  <rect x="828" y="140" width="240" height="110" fill="#FFFAFA" stroke="#900A0B" stroke-width="2"/>
+  <path d="M372 195H480" stroke="#000000" stroke-width="2"/>
+  <path d="M720 195H828" stroke="#000000" stroke-width="2"/>
+  <rect x="236" y="344" width="728" height="130" fill="#900A0B"/>
+  <text x="252" y="202" fill="#000000" font-family="Raleway, Arial, sans-serif" font-size="28" font-weight="300" text-anchor="middle">Developer Proof</text>
+  <text x="600" y="202" fill="#000000" font-family="Raleway, Arial, sans-serif" font-size="28" font-weight="300" text-anchor="middle">Security Approval</text>
+  <text x="948" y="202" fill="#000000" font-family="Raleway, Arial, sans-serif" font-size="28" font-weight="300" text-anchor="middle">Executive Rollout</text>
+  <text x="600" y="404" fill="#FFFAFA" font-family="Raleway, Arial, sans-serif" font-size="34" font-weight="300" text-anchor="middle">AgentBase Control Plane</text>
+  <text x="600" y="447" fill="#FFFAFA" font-family="Raleway, Arial, sans-serif" font-size="20" font-weight="300" text-anchor="middle">Placeholder visual for product strategy case study</text>
+</svg>

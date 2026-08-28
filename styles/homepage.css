@@ -235,7 +235,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
     gap: var(--spacing-lg);
     max-width: 100%;
-    align-items: start;
+    align-items: stretch;
 }
 
 /* Project Cards */
@@ -245,7 +245,7 @@ body {
     flex-direction: column;
     gap: var(--spacing-xs);
     width: var(--card-width);
-    height: auto;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -291,6 +291,7 @@ body {
     text-decoration: none;
     color: inherit;
     display: block;
+    height: 100%;
     transition: all 0.3s ease;
 }
 
@@ -349,6 +350,7 @@ body {
     font-size: var(--font-size-button);
     line-height: var(--line-height-button);
     color: var(--color-black);
+    margin-top: auto;
 }
 
 /* Footer */
@@ -446,16 +448,24 @@ body {
 }
 
 @media (max-width: 480px) {
+    :root {
+        --font-size-title: 32px;
+        --font-size-h1: 28px;
+        --font-size-h3: 18px;
+        --font-size-description: 13px;
+    }
+
     .hero-title {
-        font-size: 36px;
+        font-size: var(--font-size-title);
     }
     
     .hero-subtitle {
-        font-size: 18px;
+        font-size: var(--font-size-h3);
+        line-height: 28px;
     }
     
     .section-title {
-        font-size: 32px;
+        font-size: var(--font-size-h1);
     }
     
     .nav-container,

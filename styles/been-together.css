@@ -852,6 +852,16 @@ h3 {
 }
 
 @media (max-width: 480px) {
+    :root {
+        --font-size-title: 32px;
+        --font-size-h1: 28px;
+        --font-size-h2: 26px;
+        --font-size-h3: 18px;
+        --font-size-body: 13px;
+        --line-height-h3: 28px;
+        --line-height-body: 20px;
+    }
+
     .container {
         padding: 0 var(--spacing-lg);
     }
@@ -861,11 +871,12 @@ h3 {
     }
     
     .hero-title {
-        font-size: 36px;
+        font-size: var(--font-size-title);
     }
     
     .hero-subtitle {
-        font-size: 24px;
+        font-size: var(--font-size-h3);
+        line-height: var(--line-height-h3);
     }
     
     .hero-overlay {
@@ -873,4 +884,46 @@ h3 {
     }
     
     
+}
+
+@media (max-width: 1280px) {
+    .project-nav {
+        padding-left: var(--spacing-lg);
+        padding-right: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    .project-nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--spacing-md);
+        padding: 32px var(--spacing-lg);
+        margin-bottom: 180px;
+    }
+
+    .project-nav-section:last-child {
+        justify-content: flex-end;
+    }
+
+    .project-nav-link {
+        justify-content: space-between;
+    }
+
+    .project-nav-text {
+        font-size: 20px;
+        line-height: 30px;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-nav {
+        padding: var(--spacing-lg);
+    }
+
+    .project-nav-text {
+        font-size: var(--font-size-h3);
+        line-height: var(--line-height-h3);
+    }
 }

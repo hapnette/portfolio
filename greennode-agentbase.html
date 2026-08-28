@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenNode AgentBase - Paige Nguyen</title>
+    <link rel="stylesheet" href="styles/greennode-agentbase.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&amp;family=Wasted+Vindey:wght@400&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-button">
+                <a href="index.html">Paige Nguyen</a>
+            </div>
+            <div class="nav-button">
+                <a href="about.html">About</a>
+            </div>
+            <div class="nav-button">
+                <a href="https://drive.google.com/file/d/1sz5rt8r7V_laSGDggccrSBdjxH5M1TeT/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Greennode Agentbase</h1>
+                <p class="hero-intro">Product Delivery</p>
+                <a class="hero-button" href="#gtm-strategy">View final</a>
+            </div>
+            <div class="target-strip" aria-label="Target metrics">
+                <p class="target-label">TARGET METRICS</p>
+                <div class="target-metrics">
+                    <div>
+                        <strong>500</strong>
+                        <span>Developer PQLs</span>
+                    </div>
+                    <div>
+                        <strong>50</strong>
+                        <span>Enterprise PoCs</span>
+                    </div>
+                    <div>
+                        <strong>&gt;90%</strong>
+                        <span>Security Pass Rate</span>
+                    </div>
+                    <div>
+                        <strong>5</strong>
+                        <span>Lighthouse Enterprise Customers</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-background">
+            <div class="container">
+                <h2 class="section-title">Project Background</h2>
+                <div class="background-content">
+                    <div class="background-context">
+                        <h3>The Context</h3>
+                        <p>GreenNode is expanding from cloud and AI infrastructure toward enterprise AI-agent deployment. This project explored how AgentBase could differentiate in a crowded market and create a viable path from developer experimentation to enterprise adoption.</p>
+                        <h3>The Challenge</h3>
+                        <p class="challenge-statement">How might GreenNode turn developer-led AI agent experimentation into a governed, scalable enterprise product and GTM motion?</p>
+                    </div>
+                    <div class="background-meta">
+                        <div>
+                            <h3>Team</h3>
+                            <p>Tiny Titans</p>
+                        </div>
+                        <div>
+                            <h3>My Role</h3>
+                            <p>Product Strategy / GTM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="market-section">
+            <div class="container">
+                <h2 class="section-title">Market Context</h2>
+                <p class="section-headline">Everyone wants AI agents. Few can operationalize them.</p>
+                <div class="market-context-grid">
+                    <div class="market-copy">
+                        <p class="section-copy">Enterprise interest in AI agents is high, but the biggest gap appears after the demo: security/data risk, complex integration, uncertain ROI, cost control, observability, and organizational readiness prevent many initiatives from reaching production.</p>
+                    </div>
+                    <div class="scale-barrier-chart" aria-label="Survey chart showing why AI projects are difficult to scale">
+                        <h3>According to the survey, AI projects struggle to scale because...</h3>
+                        <div class="chart-content">
+                            <div class="donut-chart" aria-hidden="true">
+                                <span class="donut-value value-security">28%</span>
+                                <span class="donut-value value-integration">24%</span>
+                                <span class="donut-value value-roi">20%</span>
+                                <span class="donut-value value-cost">16%</span>
+                                <span class="donut-value value-change">12%</span>
+                                <span class="donut-center">AI</span>
+                            </div>
+                            <div class="chart-legend">
+                                <div>
+                                    <span class="legend-dot security"></span>
+                                    <p><strong>Security &amp; data risks</strong>Data leakage, incorrect access, lack of audit.</p>
+                                </div>
+                                <div>
+                                    <span class="legend-dot integration"></span>
+                                    <p><strong>Complex integration</strong>Difficult to connect systems, tools, and workflows.</p>
+                                </div>
+                                <div>
+                                    <span class="legend-dot roi"></span>
+                                    <p><strong>Unclear ROI</strong>Hard to quantify value or productivity impact.</p>
+                                </div>
+                                <div>
+                                    <span class="legend-dot cost"></span>
+                                    <p><strong>Cost &amp; performance</strong>Inference costs rise and usage is hard to predict.</p>
+                                </div>
+                                <div>
+                                    <span class="legend-dot change"></span>
+                                    <p><strong>Change management</strong>New users, new workflows, and organizational readiness.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="findings-section">
+            <div class="container">
+                <h2 class="section-title">Key User Findings</h2>
+                <p class="research-basis">Through 6 executive interviews and 50 quantitative survey responses, we identified three recurring barriers to enterprise AI-agent adoption.</p>
+                <div class="findings-grid">
+                    <article class="finding-card">
+                        <span>Accountability Gap</span>
+                        <h3>Agents become black boxes in production.</h3>
+                        <p>Operations and DevOps teams struggle to trace agent reasoning, tool calls, and failures once agents move into real workflows.</p>
+                        <div class="finding-implication">
+                            <small>Product implication</small>
+                            <strong>Observability &amp; traceability</strong>
+                        </div>
+                    </article>
+                    <article class="finding-card">
+                        <span>Security Gap</span>
+                        <h3>Security teams can't approve what they can't control.</h3>
+                        <p>CISO and compliance teams need clear permissions, access boundaries, guardrails, and auditability before they can approve production deployment.</p>
+                        <div class="finding-implication">
+                            <small>Product implication</small>
+                            <strong>Access control &amp; guardrails</strong>
+                        </div>
+                    </article>
+                    <article class="finding-card">
+                        <span>ROI Blindspot</span>
+                        <h3>Executives can't scale what they can't measure.</h3>
+                        <p>Token and compute costs are difficult to attribute by department or agent, making ROI and budget decisions harder to justify.</p>
+                        <div class="finding-implication">
+                            <small>Product implication</small>
+                            <strong>Cost &amp; ROI visibility</strong>
+                        </div>
+                    </article>
+                </div>
+                <p class="findings-synthesis">Enterprise adoption wasn't blocked by the ability to build agents. It was blocked by the ability to trust, control, and justify them.</p>
+            </div>
+        </section>
+
+        <section class="stack-section">
+            <div class="container">
+                <h2 class="section-title">Product Insight</h2>
+                <p class="section-headline">GreenNode didn't need another agent builder.<br>It needed to own the production layer.</p>
+                <div class="product-insight-grid">
+                    <div class="ownership-stack-chart" aria-label="GreenNode owns a three-layer AI stack">
+                        <h3>GreenNode owns a three-layer AI stack</h3>
+                        <article class="ownership-layer">
+                            <span class="layer-number">1</span>
+                            <div>
+                                <h4>Infrastructure layer</h4>
+                                <p>GPU/HPC, cloud, storage, database, Kubernetes/VKS</p>
+                            </div>
+                            <p>Platform foundation for running AI workloads in a controlled environment.</p>
+                        </article>
+                        <article class="ownership-layer">
+                            <span class="layer-number">2</span>
+                            <div>
+                                <h4>AI platform layer</h4>
+                                <p>Model training, fine-tuning, deployment, MaaS, LLM Gateway</p>
+                            </div>
+                            <p>Supports the AI lifecycle from model development to inference.</p>
+                        </article>
+                        <article class="ownership-layer highlight">
+                            <span class="layer-number">3</span>
+                            <div>
+                                <h4>Agent management layer</h4>
+                                <p>AgentBase, OpenClaw, Runtime, Access, Memory, Observability, Guardrails</p>
+                            </div>
+                            <p>Turns agents from demos into manageable enterprise workflows.</p>
+                        </article>
+                    </div>
+                    <div class="agentbase-info">
+                        <h3>AgentBase = the local enterprise control plane for AI agents.</h3>
+                        <p>AgentBase sits where enterprise adoption gets blocked: between promising agent prototypes and the governance needed to run them in production.</p>
+                        <div>
+                            <p>Fast enough to experiment.</p>
+                            <p>Governed enough to scale.</p>
+                            <p>Sovereign enough for sensitive data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="positioning-section">
+            <div class="container">
+                <h2 class="section-title">Competitive Positioning</h2>
+                <p class="section-headline">Don't compete on breadth. Compete on control.</p>
+                <div class="positioning-layout">
+                    <div class="positioning-map" aria-label="2x2 competitive positioning map">
+                        <span class="axis y-axis">Data Sovereignty &amp; Security</span>
+                        <span class="axis x-axis">Agent Governance Capability</span>
+                        <div class="map-point azure">Azure AI Foundry</div>
+                        <div class="map-point aws">AWS Bedrock AgentCore</div>
+                        <div class="map-point dify">Dify</div>
+                        <div class="map-point langgraph">LangGraph / LangSmith</div>
+                        <div class="map-point fpt">FPT AI Agents</div>
+                        <div class="map-point greennode">GreenNode AgentBase</div>
+                    </div>
+                    <div class="strategic-decision">
+                        <p class="section-label">Strategic decision</p>
+                        <p>"Position AgentBase as a local enterprise agent control plane: fast enough for experimentation, governed enough for production, and sovereign enough for data-sensitive industries."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="buying-section">
+            <div class="container">
+                <h2 class="section-title">Enterprise Buying</h2>
+                <p class="section-headline">Enterprise adoption isn't one buying decision.<br>It's a sequence of trust gates.</p>
+                <p class="section-copy">The stakeholder that discovers AgentBase is not necessarily the person who approves it, pays for it, or manages its consequences in production. As the agent moves through the buying journey, the definition of value changes&mdash;and so does the reason the deal can fail.</p>
+                <div class="buying-journey">
+                    <article class="journey-stage">
+                        <div class="journey-summary">
+                            <h3>Awareness</h3>
+                            <p>Innovation vs. stability</p>
+                        </div>
+                        <div class="journey-detail">
+                            <p><strong>Stakeholders</strong> CTO &harr; Developer team</p>
+                            <p>Developers want to experiment with open-source agents, while technology leadership owns infrastructure, security, and operational risk.</p>
+                            <p class="proof-point"><strong>Must prove</strong> Safe path from experimentation to enterprise adoption.</p>
+                        </div>
+                    </article>
+                    <article class="journey-stage">
+                        <div class="journey-summary">
+                            <h3>Evaluation</h3>
+                            <p>Speed vs. security</p>
+                        </div>
+                        <div class="journey-detail">
+                            <p><strong>Stakeholders</strong> AI Developer / Champion &harr; CISO / Security</p>
+                            <p>Developers want to move into a PoC, while Security needs identity, permissions, data boundaries, and governance before production access.</p>
+                            <p class="proof-point"><strong>Must prove</strong> Agent operates within enterprise security boundaries.</p>
+                        </div>
+                    </article>
+                    <article class="journey-stage critical">
+                        <div class="journey-summary">
+                            <span>Critical trust gate</span>
+                            <h3>PoC</h3>
+                            <p>Expectation vs. explainability</p>
+                        </div>
+                        <div class="journey-detail">
+                            <p><strong>Stakeholders</strong> COO / Business &harr; CTO / Technology</p>
+                            <p>The PoC is where business expectations meet real agent behavior. If an agent hallucinates or fails on a complex workflow, trust drops and technical teams need traces to diagnose why.</p>
+                            <p class="proof-point"><strong>Must prove</strong> The organization can understand, diagnose, and trust agent behavior.</p>
+                            <p class="product-implication">Observability &amp; traceability</p>
+                        </div>
+                    </article>
+                    <article class="journey-stage">
+                        <div class="journey-summary">
+                            <h3>Commercial</h3>
+                            <p>Value vs. cost control</p>
+                        </div>
+                        <div class="journey-detail">
+                            <p><strong>Stakeholders</strong> COO / Business &harr; CTO / CFO</p>
+                            <p>Once the PoC works, the question shifts from "Can this work?" to "Is this worth scaling?" Unpredictable token and compute usage makes budgeting harder.</p>
+                            <p class="proof-point"><strong>Must prove</strong> Usage can be measured, budgeted, and connected to value.</p>
+                            <p class="product-implication">Cost visibility &amp; ROI control</p>
+                        </div>
+                    </article>
+                    <article class="journey-stage">
+                        <div class="journey-summary">
+                            <h3>Usage</h3>
+                            <p>Automation vs. accountability</p>
+                        </div>
+                        <div class="journey-detail">
+                            <p><strong>Stakeholders</strong> Department Head &harr; End User</p>
+                            <p>Even after deployment, teams may manually check outputs if they do not trust the system. Adoption depends on performance, responsibility, and human intervention rules.</p>
+                            <p class="proof-point"><strong>Must prove</strong> Teams can rely on agents while maintaining accountability.</p>
+                            <p class="product-implication">Monitoring, governance &amp; human oversight</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="buying-synthesis">
+                    <p>The biggest risk wasn't getting enterprises interested. It was maintaining trust as the agent moved from experiment to real business responsibility.</p>
+                    <div class="gtm-bridge">
+                        <span>This changed the GTM logic</span>
+                        <p>Developer creates proof &rarr; Security validates control &rarr; Business validates value &rarr; Executive approves scale &rarr; Teams adopt with accountability</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gtm-logic-section" id="gtm-strategy">
+            <div class="container">
+                <h2 class="section-title">GTM Strategy</h2>
+                <div class="gtm-plan">
+                    <article>
+                        <h3>Seed</h3>
+                        <p><strong>Goal</strong>Create developer pull.</p>
+                        <p><strong>Entry point</strong>One-click OpenClaw deployment</p>
+                        <p>Low-friction experimentation gives developers a fast way to create working proof inside the organization.</p>
+                        <div class="target-chip">500 Developer PQLs</div>
+                    </article>
+                    <article>
+                        <h3>Prove</h3>
+                        <p><strong>Goal</strong>Turn developer proof into enterprise confidence.</p>
+                        <p><strong>AgentBase provides</strong>Governance, access control, guardrails, observability, and security readiness.</p>
+                        <div class="target-chip">50 Enterprise PoCs</div>
+                        <div class="target-chip">&gt;90% Security Pass Rate</div>
+                    </article>
+                    <article>
+                        <h3>Land</h3>
+                        <p><strong>Goal</strong>Convert validated PoCs into commercial accounts.</p>
+                        <p><strong>Proof required</strong>Working use case, security approval, visible business value.</p>
+                        <div class="target-chip">5 Lighthouse Customers</div>
+                        <div class="target-chip">Sales Cycle &lt; 3 months</div>
+                        <div class="target-chip">~$50K ACV / customer</div>
+                        <div class="target-chip">$250K New ARR</div>
+                    </article>
+                    <article>
+                        <h3>Expand</h3>
+                        <p><strong>Goal</strong>Scale from one validated use case into multiple teams and workflows.</p>
+                        <p><strong>AgentBase supports</strong>Cost visibility, department-level usage, budget controls, ROI tracking, and centralized governance.</p>
+                        <div class="target-chip">3x ACV expansion</div>
+                        <div class="target-chip">&gt;120% NRR</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="prototype-section">
+            <div class="container">
+                <h2 class="section-title">Prototype Onboarding Flow</h2>
+                <div class="prototype-embed">
+                    <iframe src="https://embed.figma.com/proto/4Dxlx9mgoyTfEvaVFJtcqF/GREENNODE?node-id=146-3357&amp;viewport=184%2C-1534%2C0.12&amp;scaling=scale-down-width&amp;content-scaling=fixed&amp;starting-point-node-id=146%3A3357&amp;page-id=0%3A1&amp;embed-host=share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="reflection-section">
+            <div class="container">
+                <h2 class="section-title">What I Learned</h2>
+                <p class="section-headline">What this project changed about how I think about enterprise products.</p>
+                <div class="learning-grid">
+                    <article>
+                        <h3>Enterprise products have multiple users.</h3>
+                        <p>The person using the product, the person approving it, and the person paying for it can have completely different definitions of value.</p>
+                    </article>
+                    <article>
+                        <h3>GTM can be a product problem.</h3>
+                        <p>A working prototype is not only product usage; it can become the proof that moves a purchase through the organization.</p>
+                    </article>
+                    <article>
+                        <h3>Governance can be a product advantage.</h3>
+                        <p>Permissions, observability, guardrails, and cost controls are not merely admin features in enterprise AI. They can be what makes adoption possible.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="project-gallery" aria-label="Project gallery">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <p class="gallery-note">Click to view detailed analysis.</p>
+                <div class="project-gallery">
+                    <a class="gallery-item" href="#gallery-master-plan" aria-label="Open GreenNode master plan image full screen">
+                        <img src="images/greennode/greennode-master-plan.png" alt="GreenNode six-month GTM roadmap from developer adoption to security approval and commercial expansion">
+                    </a>
+                    <a class="gallery-item" href="#gallery-gtm-strategy" aria-label="Open GreenNode GTM strategy image full screen">
+                        <img src="images/greennode/greennode-gtm-strategy.png" alt="GreenNode bottom-up B2B GTM strategy showing champion, blocker, and economic buyer sequencing">
+                    </a>
+                    <a class="gallery-item" href="#gallery-persona-coo" aria-label="Open GreenNode COO persona image full screen">
+                        <img src="images/greennode/greennode-persona-coo.png" alt="GreenNode COO persona and business user journey for AgentBase">
+                    </a>
+                    <a class="gallery-item" href="#gallery-persona-cto" aria-label="Open GreenNode CTO persona image full screen">
+                        <img src="images/greennode/greennode-persona-cto.png" alt="GreenNode CTO persona and IT admin journey for AgentBase">
+                    </a>
+                    <a class="gallery-item" href="#gallery-buying-journey" aria-label="Open GreenNode buying journey image full screen">
+                        <img src="images/greennode/greennode-buying-journey.png" alt="GreenNode buying journey and stakeholder tension across enterprise user groups">
+                    </a>
+                    <a class="gallery-item" href="#gallery-user-findings" aria-label="Open GreenNode user findings image full screen">
+                        <img src="images/greennode/greennode-user-findings.png" alt="GreenNode key user findings and insights for accountability, security, and ROI gaps">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="gallery-lightbox" id="gallery-master-plan">
+            <a class="lightbox-close" href="#project-gallery">Close</a>
+            <img src="images/greennode/greennode-master-plan.png" alt="GreenNode six-month GTM roadmap from developer adoption to security approval and commercial expansion">
+        </div>
+        <div class="gallery-lightbox" id="gallery-gtm-strategy">
+            <a class="lightbox-close" href="#project-gallery">Close</a>
+            <img src="images/greennode/greennode-gtm-strategy.png" alt="GreenNode bottom-up B2B GTM strategy showing champion, blocker, and economic buyer sequencing">
+        </div>
+        <div class="gallery-lightbox" id="gallery-persona-coo">
+            <a class="lightbox-close" href="#project-gallery">Close</a>
+            <img src="images/greennode/greennode-persona-coo.png" alt="GreenNode COO persona and business user journey for AgentBase">
+        </div>
+        <div class="gallery-lightbox" id="gallery-persona-cto">
+            <a class="lightbox-close" href="#project-gallery">Close</a>
+            <img src="images/greennode/greennode-persona-cto.png" alt="GreenNode CTO persona and IT admin journey for AgentBase">
+        </div>
+        <div class="gallery-lightbox" id="gallery-buying-journey">
+            <a class="lightbox-close" href="#project-gallery">Close</a>
+            <img src="images/greennode/greennode-buying-journey.png" alt="GreenNode buying journey and stakeholder tension across enterprise user groups">
+        </div>
+        <div class="gallery-lightbox" id="gallery-user-findings">
+            <a class="lightbox-close" href="#project-gallery">Close</a>
+            <img src="images/greennode/greennode-user-findings.png" alt="GreenNode key user findings and insights for accountability, security, and ROI gaps">
+        </div>
+    </main>
+
+    <nav class="project-nav">
+        <div class="project-nav-section">
+            <a href="been-together.html" class="project-nav-link">
+                <img src="images/common/arrow-left.svg" alt="Previous" class="project-nav-arrow">
+                <span class="project-nav-text">Been Together</span>
+            </a>
+        </div>
+        <div class="project-nav-section">
+            <a href="sapo-6870.html" class="project-nav-link">
+                <span class="project-nav-text">SAPO</span>
+                <img src="images/common/arrow-right.svg" alt="Next" class="project-nav-arrow">
+            </a>
+        </div>
+    </nav>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="contact-info">
+                <span>haphuong.workcontact@gmail.com</span>
+                <br>
+                <a href="https://www.linkedin.com/in/phuong-paige-nguyen-6b3147289/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
