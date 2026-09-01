@@ -30,9 +30,9 @@
         <!-- Hero Section -->
         <section class="hero-section">
             <h1 class="hero-title">Hi, I'm Paige Nguyen,</h1>
-            <h2 class="hero-subtitle">a curious mind blending business with design.</h2>
+            <h2 class="hero-subtitle">A proactive mind connecting people, business, technology, and operations.</h2>
             <p class="hero-description">
-                I come from a business background but aspire to step into the creative field. Backed by deep passion and project-based learning, I aim to bring creative solution that support business goals and create value to users and all stakeholders involved.
+                I come from a business background and have found myself most interested in work that brings together people, business, technology, and operations. I enjoy being in the middle of different teams, understanding what is happening across them, and helping turn ideas and priorities into things that actually move forward.
             </p>
             <div class="cta-button">
                 <a href="about.html">
@@ -58,8 +58,8 @@
             <!-- Portfolio Grid -->
             <div class="portfolio-grid">
                 <!-- Project Card 1 - GreenNode AgentBase -->
-                <a href="greennode-agentbase.html" class="project-card-link" data-category="product-strategy">
-                    <div class="project-card" data-category="product-strategy">
+                <a href="greennode-agentbase.html" class="project-card-link" data-category="product-strategy ui-ux">
+                    <div class="project-card" data-category="product-strategy ui-ux">
                         <div class="project-image project-image-6">
                             <img src="images/greennode/greennode-project-card.png" alt="GreenNode AgentBase" />
                         </div>
@@ -77,8 +77,8 @@
                 </a>
 
                 <!-- Project Card 2 - SAPO 6870 -->
-                <a href="sapo-6870.html" class="project-card-link" data-category="product-strategy">
-                    <div class="project-card" data-category="product-strategy">
+                <a href="sapo-6870.html" class="project-card-link" data-category="product-strategy ux-writing">
+                    <div class="project-card" data-category="product-strategy ux-writing">
                         <div class="project-image project-image-7">
                             <img src="images/sapo/sapo-project-card.png" alt="SAPO 6870" />
                         </div>
@@ -96,8 +96,8 @@
                 </a>
 
                 <!-- Project Card 1 - Tierra Finlandia -->
-                <a href="tierra-finlandia.html" class="project-card-link" data-category="ui-ux">
-                    <div class="project-card" data-category="ui-ux">
+                <a href="tierra-finlandia.html" class="project-card-link" data-category="ui-ux service-design">
+                    <div class="project-card" data-category="ui-ux service-design">
                         <div class="project-image project-image-1">
                             <img src="images/tierra/tierra-hero-bg.png" alt="Tierra Finlandia" />
                         </div>
@@ -217,7 +217,9 @@
 
                 // Filter project card links while maintaining grid layout
                 projectCardLinks.forEach(link => {
-                    if (filter === 'all' || link.getAttribute('data-category') === filter) {
+                    const categories = link.getAttribute('data-category').split(/\s+/);
+
+                    if (filter === 'all' || categories.includes(filter)) {
                         link.style.display = 'block';
                         link.style.opacity = '1';
                     } else {
